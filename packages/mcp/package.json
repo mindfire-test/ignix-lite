@@ -1,0 +1,18 @@
+{
+  "name": "mcp",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "tsup src/server.ts --watch",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0"
+}
