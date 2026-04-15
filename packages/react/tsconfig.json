@@ -42,5 +42,5 @@
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
   },
-  "include": ["src"]
+  
 }

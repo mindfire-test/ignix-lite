@@ -1,3 +1,3 @@
 export const hello = () => {
-    return "ignix core is working"
+  return 'ignix core is working'
 }
