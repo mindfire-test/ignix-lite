@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "echo vue dev",
     "test": "vitest run --passWithNoTests",
-    "format": "echo no files yet",
-    "build": "echo building vue"
+    "format": "prettier --write .",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
