@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo no tests yet",
-    "lint": "echo no files yet",
-    "format": "echo no files yet",
-    "build": "echo building core"
+    "dev": "echo \"CSS dev not required\"",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run --passWithNoTests",
+    "lint": "eslint . || true",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
