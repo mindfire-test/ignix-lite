@@ -1,0 +1,31 @@
+name: CI
+ 
+on:
+  push:
+    branches: ["main", "initial-setup"]
+  pull_request:
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+ 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+ 
+      - name: Install dependencies
+        run: pnpm install
+ 
+      - name: Run lint
+        run: pnpm lint
+ 
+      - name: Run test
+        run: pnpm test
+ 
+      - name: Build project
+        run: pnpm build
