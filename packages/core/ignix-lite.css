@@ -1,3 +1,5 @@
+@import './css/button.css';
+
 /* 1. MINIMAL RESET */
 
 html {
@@ -19,7 +21,7 @@ html {
   --ix-primary-hover: #1d4ed8;
 
   --ix-danger: #dc2626;
-  --ix-warning: #d97706;
+  --ix-warning: #fbbf24;
   --ix-success: #16a34a;
   --ix-neutral: #6b7280;
   --ix-ghost: transparent;
