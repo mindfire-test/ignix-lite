@@ -8,7 +8,8 @@
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "test": "vitest run --passWithNoTests",
     "lint": "eslint . || true",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build:css": "cleancss -o ignix-lite.min.css ignix-lite.css"
   },
   "keywords": [],
   "author": "",
