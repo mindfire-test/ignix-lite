@@ -34,13 +34,14 @@
 
     // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
+    //"jsx": "react-jsx",
     // "verbatimModuleSyntax": true,
     // "isolatedModules": true,
     // "noUncheckedSideEffectImports": true,
     // "moduleDetection": "force",
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
+    "composite": true
   },
   "include": ["src"]
   
