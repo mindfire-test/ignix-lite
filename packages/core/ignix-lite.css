@@ -35,9 +35,9 @@ html {
 
   --ix-focus: 2px solid var(--ix-primary);
 
-  /*  TYPOGRAPHY  */ 
+  /*  TYPOGRAPHY  */
 
-  --ix-font: system-ui,-apple-system, sans-serif;
+  --ix-font: system-ui, -apple-system, sans-serif;
   --ix-font-mono: ui-monospace, monospace;
 
   --ix-size-xs: 0.75rem;
