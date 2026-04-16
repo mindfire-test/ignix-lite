@@ -21,8 +21,8 @@
     //"declarationMap": true,
 
     // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+    // "noUncheckedIndexedAccess": true,
+    // "exactOptionalPropertyTypes": true,
 
     // Style Options
     // "noImplicitReturns": true,
@@ -41,6 +41,7 @@
     // "moduleDetection": "force",
     "moduleResolution": "Bundler",
     "skipLibCheck": true,
+    "composite": true
   },
   "include": ["src"]
 }

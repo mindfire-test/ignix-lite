@@ -1,18 +1,25 @@
 {
-  "name": "core",
+  "name": "@ignix-lite/core",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "echo \"CSS dev not required\"",
-    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "build": "pnpm run build:css",
     "test": "vitest run --passWithNoTests",
-    "lint": "eslint . || true",
+    "lint": "eslint . --no-error-on-unmatched-pattern",
     "format": "prettier --write .",
     "build:css": "cleancss -o ignix-lite.min.css ignix-lite.css"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+  "vitest": "^4.1.4" ,
+  "eslint": "^10.2.0",
+  "prettier": "^3.8.3"
+  
+}
 }

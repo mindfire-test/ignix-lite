@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "@ignix-lite/vue",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +13,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+  "tsup": "^8.5.1",
+  "vitest": "^4.1.4",  
+  "eslint": "^10.2.0",
+  "prettier": "^3.8.3",
+  "typescript": "^5.4.5"
+ }
 }
