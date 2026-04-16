@@ -9,17 +9,15 @@
     "test": "vitest run --passWithNoTests",
     "lint": "eslint . --no-error-on-unmatched-pattern",
     "format": "prettier --write .",
-    "build:css": "cleancss -o ignix-lite.min.css ignix-lite.css"
-
+    "build:css": "pnpm exec cleancss -o ignix-lite.min.css ignix-lite.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
-  "vitest": "^4.1.4" ,
-  "eslint": "^10.2.0",
-  "prettier": "^3.8.3"
-  
-}
+    "vitest": "^4.1.4",
+    "eslint": "^10.2.0",
+    "prettier": "^3.8.3"
+  }
 }
