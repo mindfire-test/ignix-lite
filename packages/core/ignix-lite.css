@@ -95,6 +95,7 @@ html {
 
 body {
   margin: 0;
+  padding: var(--ix-space-md);
   background-color: var(--ix-surface);
   color: var(--ix-text);
   font-family: var(--ix-font);
