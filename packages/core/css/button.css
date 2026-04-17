@@ -32,7 +32,7 @@ button[data-intent='danger'] {
 
 button[data-intent='warning'] {
   background: var(--ix-warning);
-  color: #fff;
+  color: #000;
 }
 
 button[data-intent='success'] {
@@ -42,16 +42,17 @@ button[data-intent='success'] {
 
 button[data-intent='ghost'] {
   background: transparent;
-  color: var(--ix-text);
-  border-color: transparent;
+  color: var(--ix-text-muted); 
+  border: 1px solid transparent;
 }
 
-button[data-intent='neutral'],
-button:not([data-intent]) {
-  background: var(--ix-surface-raised);
-  color: var(--ix-text);
-  border-color: var(--ix-border);
-}
+
+  button[data-intent='neutral'],
+  button:not([data-intent]) {
+    background: var(--ix-surface-raised);
+    color: var(--ix-text);
+    border-color: var(--ix-border);
+  }
 
 /* states */
 
@@ -78,7 +79,6 @@ button:disabled {
 button[aria-busy='true'] {
   position: relative;
   pointer-events: none;
-  color: transparent;
 }
 
 button[aria-busy='true']::after {
@@ -86,7 +86,7 @@ button[aria-busy='true']::after {
   position: absolute;
   width: 1em;
   height: 1em;
-  border: 2px solid var(--ix-text);
+  border: 2px solid currentColor;
   border-top-color: transparent;
   border-radius: 50%;
   animation: ix-spin 0.6s linear infinite;

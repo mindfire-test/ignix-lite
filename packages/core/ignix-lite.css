@@ -22,7 +22,7 @@ html {
 
   --ix-danger: #dc2626;
   --ix-warning: #fbbf24;
-  --ix-success: #16a34a;
+  --ix-success: #15803d;
   --ix-neutral: #6b7280;
   --ix-ghost: transparent;
 
@@ -80,12 +80,12 @@ html {
     --ix-border: #374151;
 
     /*  INTENT COLORS */
-    --ix-primary: #3b82f6;
+    --ix-primary: #1d4ed8;
     --ix-primary-hover: #2563eb;
 
-    --ix-danger: #ef4444;
+    --ix-danger: #b91c1c;
     --ix-warning: #fbbf24;
-    --ix-success: #22c55e;
+    --ix-success: #15803d;
     --ix-neutral: #9ca3af;
     --ix-ghost: transparent;
   }
