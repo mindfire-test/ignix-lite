@@ -39,7 +39,7 @@ describe('Ignix Button Component', () => {
     expect(btn.getAttribute('aria-busy')).toBe('true')
   })
 
-  it('does not use class attribute (SRS rule)', () => {
+  it('does not use class attribute', () => {
     const btn = document.createElement('button')
 
     expect(btn.hasAttribute('class')).toBe(false)
