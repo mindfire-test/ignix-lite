@@ -37,12 +37,12 @@ export const Disabled = {
 }
 
 export const Loading = {
-  render: () => `<button data-intent="primary" aria-busy="true">Loading</button>`
+  render: () => `<button data-intent="primary" aria-busy="true"><span>Loading</span></button>`
 }
 
 export const AllVariants = {
   render: () => `
-    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+    <section>
       <button data-intent="primary">Primary</button>
       <button data-intent="danger">Danger</button>
       <button data-intent="ghost">Ghost</button>
@@ -50,6 +50,6 @@ export const AllVariants = {
       <button data-intent="success">Success</button>
       <button data-intent="neutral">Neutral</button>
       
-    </div>
+    </section>
   `
 }
