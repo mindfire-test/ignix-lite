@@ -1,0 +1,55 @@
+label {
+  color: var(--ix-text);
+  display: flex;
+  flex-direction: column;
+  gap: var(--ix-space-sm);
+  font-size: var(--ix-size-sm);
+}
+
+label input {
+  font: inherit;
+  padding: var(--ix-space-sm);
+  border-radius: var(--ix-radius);
+  border: 1px solid var(--ix-border);
+  background: var(--ix-surface);
+  color: var(--ix-text);
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+label input[data-intent='primary'] {
+  border-color: var(--ix-primary);
+}
+
+label input[data-intent='danger'] {
+  border-color: var(--ix-danger);
+}
+
+label input[data-intent='warning'] {
+  border-color: var(--ix-warning);
+}
+
+label input[data-intent='success'] {
+  border-color: var(--ix-success);
+}
+
+label input[data-intent='neutral'],
+label input:not([data-intent]) {
+  border-color: var(--ix-border);
+}
+
+label input:focus-visible {
+  outline: var(--ix-focus);
+  outline-offset: 2px;
+}
+
+label input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+label input[aria-invalid='true'] {
+  border-color: var(--ix-danger);
+}
