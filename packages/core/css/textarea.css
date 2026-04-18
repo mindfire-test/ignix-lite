@@ -1,0 +1,50 @@
+label textarea {
+  font: inherit;
+  padding: var(--ix-space-sm);
+  border-radius: var(--ix-radius);
+  border: 1px solid var(--ix-border);
+  background: var(--ix-surface);
+  color: var(--ix-text);
+
+  resize: vertical;
+  width: 100%;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+label textarea[data-intent='primary'] {
+  border-color: var(--ix-primary);
+}
+label textarea[data-intent='danger'] {
+  border-color: var(--ix-danger);
+}
+label textarea[data-intent='warning'] {
+  border-color: var(--ix-warning);
+}
+label textarea[data-intent='success'] {
+  border-color: var(--ix-success);
+}
+label textarea[data-intent='neutral'],
+label textarea:not([data-intent]) {
+  border-color: var(--ix-border);
+}
+
+label textarea:focus-visible {
+  outline: var(--ix-focus);
+  outline-offset: 2px;
+}
+
+label textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+label textarea[aria-invalid='true'] {
+  border-color: var(--ix-danger);
+}
+
+label textarea[aria-invalid='true'] {
+  border-color: var(--ix-danger);
+  box-shadow: 0 0 0 1px var(--ix-danger);
+}
