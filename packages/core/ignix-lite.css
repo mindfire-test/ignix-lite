@@ -1,6 +1,7 @@
 @import './css/button.css';
 @import './css/input.css';
 @import './css/textarea.css';
+@import './css/alert.css';
 
 /* 1. MINIMAL RESET */
 
@@ -27,6 +28,11 @@ html {
   --ix-success: #15803d;
   --ix-neutral: #6b7280;
   --ix-ghost: transparent;
+
+  --ix-danger-bg: #fee2e2;
+  --ix-warning-bg: #fef3c7;
+  --ix-success-bg: #dcfce7;
+  --ix-info-bg: #f3f4f6;
 
   /*  COLORS: SURFACE  */
   --ix-surface: #ffffff;
@@ -90,6 +96,11 @@ html {
     --ix-success: #15803d;
     --ix-neutral: #9ca3af;
     --ix-ghost: transparent;
+
+    --ix-danger-bg: #3f1d1d;
+    --ix-warning-bg: #3f2e05;
+    --ix-success-bg: #052e16;
+    --ix-info-bg: #1f2937;
   }
 }
 
