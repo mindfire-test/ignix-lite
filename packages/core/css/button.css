@@ -42,17 +42,16 @@ button[data-intent='success'] {
 
 button[data-intent='ghost'] {
   background: transparent;
-  color: var(--ix-text-muted); 
+  color: var(--ix-text-muted);
   border: 1px solid var(--ix-border);
 }
 
-
-  button[data-intent='neutral'],
-  button:not([data-intent]) {
-    background: var(--ix-surface-raised);
-    color: var(--ix-text);
-    border-color: var(--ix-border);
-  }
+button[data-intent='neutral'],
+button:not([data-intent]) {
+  background: var(--ix-surface-raised);
+  color: var(--ix-text);
+  border-color: var(--ix-border);
+}
 
 /* states */
 
@@ -79,14 +78,10 @@ button:disabled {
 button[aria-busy='true'] {
   position: relative;
   pointer-events: none;
-  
- 
 }
 
-
 button[aria-busy='true'] span {
- opacity: 0;
-
+  opacity: 0;
 }
 
 button[aria-busy='true']::after {
@@ -98,7 +93,6 @@ button[aria-busy='true']::after {
   border-top-color: transparent;
   border-radius: 50%;
   animation: ix-spin 0.6s linear infinite;
-  
 }
 
 @keyframes ix-spin {
