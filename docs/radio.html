@@ -3,110 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <title>Radio - ignix-lite</title>
- 
+
   <link rel="stylesheet" href="../packages/core/ignix-lite.min.css" />
 </head>
- 
+
 <body>
- 
+
   <header>
     <h1>Radio</h1>
     <p><a href="./index.html"> - Back to Docs</a></p>
   </header>
- 
+
   <main>
- 
-    
+
     <section>
       <h2>Usage</h2>
- 
+
 <pre><code>
 &lt;label&gt;
   &lt;input type="radio" name="lang"&gt;
   JavaScript
 &lt;/label&gt;
 </code></pre>
- 
+
       <label>
         <input type="radio" name="lang">
         JavaScript
       </label>
     </section>
- 
+
     <section>
       <h2>States</h2>
- 
+
       <h3>Checked</h3>
+
+<pre><code>
+&lt;label&gt;
+  &lt;input type="radio" name="lang" checked&gt;
+  Checked
+&lt;/label&gt;
+</code></pre>
+
       <label>
         <input type="radio" name="lang" checked>
         Checked
       </label>
- 
+
       <h3>Disabled</h3>
+
+<pre><code>
+&lt;label&gt;
+  &lt;input type="radio" name="lang" disabled&gt;
+  Disabled
+&lt;/label&gt;
+</code></pre>
+
       <label>
         <input type="radio" name="lang" disabled>
         Disabled
       </label>
- 
-<pre><code>
-&lt;input type="radio" checked&gt;
-&lt;input type="radio" disabled&gt;
-</code></pre>
- 
+
     </section>
- 
-    
+
     <section>
       <h2>Required</h2>
- 
+
+<pre><code>
+&lt;label&gt;
+  &lt;input type="radio" name="lang" required&gt;
+  JavaScript
+&lt;/label&gt;
+
+&lt;label&gt;
+  &lt;input type="radio" name="lang"&gt;
+  Python
+&lt;/label&gt;
+</code></pre>
+
       <label>
         <input type="radio" name="lang" required>
         JavaScript
       </label>
- 
+
       <label>
         <input type="radio" name="lang">
         Python
       </label>
- 
-<pre><code>
-&lt;input type="radio" name="lang" required&gt;
-</code></pre>
- 
+
       <p>At least one option must be selected.</p>
     </section>
- 
-  
+
     <section>
       <h2>Radio Group</h2>
- 
+
+<pre><code>
+&lt;label&gt;
+  &lt;input type="radio" name="lang"&gt;
+  JavaScript
+&lt;/label&gt;
+
+&lt;label&gt;
+  &lt;input type="radio" name="lang"&gt;
+  Python
+&lt;/label&gt;
+
+&lt;label&gt;
+  &lt;input type="radio" name="lang"&gt;
+  Java
+&lt;/label&gt;
+</code></pre>
+
       <label>
         <input type="radio" name="lang">
         JavaScript
       </label>
- 
+
       <label>
         <input type="radio" name="lang">
         Python
       </label>
- 
+
       <label>
         <input type="radio" name="lang">
         Java
       </label>
- 
-<pre><code>
-&lt;input type="radio" name="group"&gt;
-</code></pre>
- 
+
     </section>
- 
+
   </main>
- 
+
   <footer>
     <p>ignix-lite - Radio Docs</p>
   </footer>
- 
+
 </body>
 </html>
- 

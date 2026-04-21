@@ -20,26 +20,26 @@
   <h2>Confirm Dialog</h2>
  
 <pre><code>
-&lt;dialog id="sure" data-intent="danger"&gt;
+&lt;dialog id="confirmDialog" data-intent="danger"&gt;
   &lt;h2&gt;Confirm Delete&lt;/h2&gt;
-  &lt;p&gt;Are you sureyou want to delete this item?&lt;/p&gt;
+  &lt;p&gt;Are you sure you want to delete this item?&lt;/p&gt;
   &lt;p&gt;This action cannot be undone&lt;/p&gt;
-  &lt;button onclick="this.closest('dialog').close()"&gt;Cancel&lt;/button&gt;
-  &lt;button data-intent="danger" onclick="this.closest('dialog').close()"&gt;Delete&lt;/button&gt;
+  &lt;button onclick="confirmDialog.close()"&gt;Cancel&lt;/button&gt;
+  &lt;button data-intent="danger" onclick="confirmDialog.close()"&gt;Delete&lt;/button&gt;
 &lt;/dialog&gt;
  
-&lt;button onclick="this.previousElementSibling.showModal()"&gt;Delete Item&lt;/button&gt;
+&lt;button onclick="confirmDialog.showModal()"&gt;Delete Item&lt;/button&gt;
 </code></pre>
  
-  <dialog id="sure" data-intent="danger">
+  <dialog id="confirmDialog" data-intent="danger">
     <h2>Confirm Delete</h2>
-    <p>Are you sureyou want to delete this item?</p>
+    <p>Are you sure you want to delete this item?</p>
     <p>This action cannot be undone</p>
-    <button onclick="this.closest('dialog').close()">Cancel</button>
-    <button data-intent="danger" onclick="this.closest('dialog').close()">Delete</button>
+    <button onclick="confirmDialog.close()">Cancel</button>
+    <button data-intent="danger" onclick="confirmDialog.close()">Delete</button>
   </dialog>
  
-  <button onclick="this.previousElementSibling.showModal()">Delete Item</button>
+  <button onclick="confirmDialog.showModal()">Delete Item</button>
  
 </section>
  
@@ -51,7 +51,7 @@
 &lt;dialog id="warn" data-intent="warning"&gt;
   &lt;h2&gt;Warning&lt;/h2&gt;
   &lt;p&gt;You have unsaved changes&lt;/p&gt;
-  &lt;p&gt;If you leave now , your progress will be lost&lt;/p&gt;
+  &lt;p&gt;If you leave now, your progress will be lost&lt;/p&gt;
   &lt;button onclick="warn.close()"&gt;Close&lt;/button&gt;
   &lt;button onclick="warn.close()"&gt;Continue&lt;/button&gt;
 &lt;/dialog&gt;
@@ -78,7 +78,7 @@
 <pre><code>
 &lt;dialog id="info" data-intent="info"&gt;
   &lt;h2&gt;Info&lt;/h2&gt;
-  &lt;p&gt;Your session will expire in 2 minutes due to inactiity.&lt;/p&gt;
+  &lt;p&gt;Your session will expire in 2 minutes due to inactivity.&lt;/p&gt;
   &lt;p&gt;Please save your work or continue to stay logged in&lt;/p&gt;
   &lt;button onclick="info.close()"&gt;Close&lt;/button&gt;
   &lt;button onclick="info.close()"&gt;Save&lt;/button&gt;
@@ -89,7 +89,7 @@
  
   <dialog id="info" data-intent="info">
     <h2>Info</h2>
-    <p>Your session will expire in 2 minutes due to inactiity.</p>
+    <p>Your session will expire in 2 minutes due to inactivity.</p>
     <p>Please save your work or continue to stay logged in</p>
     <button onclick="info.close()">Close</button>
     <button onclick="info.close()">Save</button>
