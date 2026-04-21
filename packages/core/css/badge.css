@@ -1,0 +1,40 @@
+mark[data-intent],
+span[role="status"][data-intent] {
+  display: inline-block;
+
+  font-size: var(--ix-size-sm);
+  line-height: 1;
+
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--ix-radius);
+
+  border: 1px solid var(--ix-border);
+
+  background: var(--ix-surface-raised);
+  color: var(--ix-text);
+}
+
+
+mark[data-intent="danger"],
+span[role="status"][data-intent="danger"] {
+  background: var(--ix-danger);
+  color: #fff;
+}
+
+mark[data-intent="warning"],
+span[role="status"][data-intent="warning"] {
+  background: var(--ix-warning);
+  color: #000;
+}
+
+mark[data-intent="success"],
+span[role="status"][data-intent="success"] {
+  background: var(--ix-success);
+  color: #fff;
+}
+
+mark[data-intent="neutral"],
+span[role="status"][data-intent="neutral"] {
+  background: var(--ix-surface-raised);
+  color: var(--ix-text);
+}
