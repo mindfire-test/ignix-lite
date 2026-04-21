@@ -1,0 +1,55 @@
+label select[data-intent] {
+  font: inherit;
+  padding: var(--ix-space-sm);
+  border-radius: var(--ix-radius);
+  border: 1px solid var(--ix-border);
+  background-color: var(--ix-surface);
+  color: var(--ix-text);
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+label select[multiple] {
+  
+  border-radius: var(--ix-radius);
+  background-color: var(--ix-surface-raised);
+  font-size: var(--ix-size-md);
+}
+
+label select[multiple] option {
+  border-bottom: 1px solid var(--ix-border);
+}
+
+label select[multiple] option:checked {
+  background: var(--ix-primary);
+  
+}
+
+label select[data-intent='primary'] {
+  border-color: var(--ix-primary);
+}
+label select[data-intent='danger'] {
+  border-color: var(--ix-danger);
+}
+label select[data-intent='warning'] {
+  border-color: var(--ix-warning);
+}
+label select[data-intent='success'] {
+  border-color: var(--ix-success);
+}
+label select[data-intent='neutral'] {
+  border-color: var(--ix-border);
+}
+
+label select[data-intent]:focus-visible {
+  outline: var(--ix-focus);
+  outline-offset: 2px;
+}
+label select[data-intent]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+label select[data-intent][aria-invalid='true'] {
+  border-color: var(--ix-danger);
+}
