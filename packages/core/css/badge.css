@@ -18,19 +18,22 @@ span[role="status"][data-intent] {
 mark[data-intent="danger"],
 span[role="status"][data-intent="danger"] {
   background: var(--ix-danger);
-  color: #fff;
+   color: var(--ix-on-danger);
+  
 }
 
 mark[data-intent="warning"],
 span[role="status"][data-intent="warning"] {
   background: var(--ix-warning);
-  color: #000;
+    color: var(--ix-on-warning);
+  
 }
 
 mark[data-intent="success"],
 span[role="status"][data-intent="success"] {
   background: var(--ix-success);
-  color: #fff;
+  color: var(--ix-on-success);
+  
 }
 
 mark[data-intent="neutral"],
