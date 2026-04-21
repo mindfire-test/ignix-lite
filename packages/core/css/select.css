@@ -8,10 +8,10 @@ label select[data-intent] {
 
   transition:
     border-color 0.15s ease,
-    border-shadow 0.15s ease;
+    box-shadow 0.15s ease;
 }
 label select[multiple] {
-  border: 1px solid var(--ix-border);
+  
   border-radius: var(--ix-radius);
   background-color: var(--ix-surface-raised);
   font-size: var(--ix-size-md);
@@ -23,7 +23,7 @@ label select[multiple] option {
 
 label select[multiple] option:checked {
   background: var(--ix-primary);
-  color: #fff;
+  
 }
 
 label select[data-intent='primary'] {
