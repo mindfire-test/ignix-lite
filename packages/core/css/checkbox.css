@@ -3,11 +3,11 @@ label input[type='checkbox'] {
   cursor: pointer;
 }
 label:has(input[type='checkbox']) {
-    
+  display: flex;
   align-items: center;
   flex-direction: row;
   color: var(--ix-text);
-  font-size: var(--ix-surface);
+  font-size: var(--ix-size-md);
 }
 label input[type='checkbox']:disabled {
   opacity: 0.5;
