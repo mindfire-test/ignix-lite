@@ -1,0 +1,41 @@
+dialog {
+    padding: var(--ix-space-md);
+    border-radius: var(--ix-radius);
+    border: var(--ix-border);
+    background: var(--ix-surface);
+    color: var(--ix-text);
+    box-shadow: var(--ix-shadow);
+    max-width: 28rem;
+}
+dialog h2 {
+    margin: 0 0 var(--ix-space-sm) ;
+}
+dialog p{
+    margin: 0 0 var(--ix-surface-md);
+    color: var(--ix-text-muted);
+}
+dialog button {
+    margin-top: var(--ix-space-sm);
+}
+dialog button + button {
+    margin-left: var(--ix-space-md);
+}
+dialog::backdrop {
+    background: var(--ix-surface-raised);
+}
+dialog[data-intent="danger"] {
+    border-color: var(--ix-danger);
+    background: var(--ix-danger-bg);
+}
+dialog[data-intent="warning"] {
+    border-color: var(--ix-warning);
+    background: var(--ix-warning-bg);
+}
+dialog[data-intent="info"] {
+    border-color: var(--ix-neutral);
+    background: var(--ix-info-bg);
+}
+dialog:focus-visible {
+    outline: 2px solid var(--ix-primary);
+    outline-offset: 2px;
+}
