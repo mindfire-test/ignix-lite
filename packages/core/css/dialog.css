@@ -1,7 +1,7 @@
 dialog {
     padding: var(--ix-space-md);
     border-radius: var(--ix-radius);
-    border: var(--ix-border);
+    border: 1px solid var(--ix-border);
     background: var(--ix-surface);
     color: var(--ix-text);
     box-shadow: var(--ix-shadow);
@@ -11,7 +11,7 @@ dialog h2 {
     margin: 0 0 var(--ix-space-sm) ;
 }
 dialog p{
-    margin: 0 0 var(--ix-surface-md);
+    margin: 0 0 var(--ix-space-md);
     color: var(--ix-text-muted);
 }
 dialog button {

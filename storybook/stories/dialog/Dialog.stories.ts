@@ -8,15 +8,15 @@ export default meta
  
 export const ConfirmDialog = {
   render: () => `
-    <dialog id="sure" data-intent="danger">
+    <dialog id="confirmDialog" data-intent="danger">
       <h2>Confirm Delete</h2>
       <p>Are you sureyou want to delete this item?</p>
       <p>This action cannot be undone</p> 
-      <button onclick="this.closest('dialog').close()">Cancel</button>
-      <button data-intent="danger" onclick="this.closest('dialog').close()">Delete</button>
+      <button onclick="confirmDialog.close()">Cancel</button>
+      <button data-intent="danger" onclick="confirmDialog.close()">Delete</button>
     </dialog>
  
-    <button onclick="this.previousElementSibling.showModal()">Delete Item</button>
+    <button onclick="confirmDialog.showModal()">Delete Item</button>
   `
 }
  
