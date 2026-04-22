@@ -1,0 +1,19 @@
+label input[type='checkbox'] {
+  accent-color: var(--ix-primary);
+  cursor: pointer;
+}
+label:has(input[type='checkbox']) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: var(--ix-text);
+  font-size: var(--ix-size-md);
+}
+label input[type='checkbox']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+label input[type='checkbox']:focus-visible {
+  outline: 2px solid var(--ix-focus);
+  outline-offset: 2px;
+}

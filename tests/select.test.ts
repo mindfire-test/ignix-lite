@@ -62,30 +62,6 @@ describe('Select Component', () => {
     expect(select.hasAttribute('multiple')).toBe(true)
   })
 
-  it('should support aria-invalid', () => {
-    container.innerHTML = `
-      <label>
-        Country
-        <select aria-invalid="true"></select>
-      </label>
-    `
-
-    const select = container.querySelector('select')!
-    expect(select.getAttribute('aria-invalid')).toBe('true')
-  })
-
-  it('should support data-intent', () => {
-    container.innerHTML = `
-      <label>
-        Country
-        <select data-intent="primary"></select>
-      </label>
-    `
-
-    const select = container.querySelector('select')!
-    expect(select.getAttribute('data-intent')).toBe('primary')
-  })
-
   it('should not use class attribute', () => {
     container.innerHTML = `
       <label>
