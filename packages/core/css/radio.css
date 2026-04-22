@@ -1,0 +1,23 @@
+label input[type='radio'] {
+  accent-color: var(--ix-primary);
+  cursor: pointer;
+}
+
+label:has(input[type='radio']) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--ix-space-sm);
+  color: var(--ix-text);
+  font-size: var(--ix-size-sm);
+}
+
+label input[type='radio']:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+label input[type='radio']:focus-visible {
+  outline: var(--ix-focus);
+  outline-offset: 2px;
+}
