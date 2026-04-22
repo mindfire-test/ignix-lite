@@ -5,6 +5,7 @@
 @import './css/select.css';
 @import './css/checkbox.css';
 @import './css/radio.css';
+@import './css/badge.css';
 
 /* 1. MINIMAL RESET */
 
@@ -36,6 +37,11 @@ html {
   --ix-warning-bg: #fef3c7;
   --ix-success-bg: #dcfce7;
   --ix-info-bg: #f3f4f6;
+
+  --ix-on-primary: #ffffff;
+  --ix-on-danger: #ffffff;
+  --ix-on-warning: #000000;
+  --ix-on-success: #ffffff;
 
   /*  COLORS: SURFACE  */
   --ix-surface: #ffffff;
