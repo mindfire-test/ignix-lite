@@ -1,0 +1,38 @@
+article {
+  padding: var(--ix-space-md);
+  border: 1px solid var(--ix-border);
+  border-radius: var(--ix-radius);
+  background: var(--ix-surface);
+  max-width: 320px;
+  margin: 0;
+}
+
+article > * + * {
+  margin-top: var(--ix-space-sm);
+}
+
+
+[slot="avatar"] {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+
+[slot="title"] {
+  font-size: var(--ix-size-lg);
+  font-weight: 600;
+}
+
+
+[slot="meta"] {
+  font-size: var(--ix-size-sm);
+  color: var(--ix-text-muted);
+}
+
+[slot="footer"] {
+  font-size: var(--ix-size-sm);
+  color: var(--ix-text-muted);
+}
+
+
