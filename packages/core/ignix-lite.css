@@ -10,6 +10,12 @@
 @import './css/accordion.css';
 @import './css/card.css';
 @import './css/codeblock.css';
+@import './css/divider.css';
+@import './css/progress.css';
+@import './css/meter.css';
+@import './css/skeleton.css';
+@import './css/form.css';
+@import './css/table.css';
 
 /* 1. MINIMAL RESET */
 
@@ -46,6 +52,8 @@ html {
   --ix-on-danger: #ffffff;
   --ix-on-warning: #000000;
   --ix-on-success: #ffffff;
+
+  --ix-divider: #9ca3af;
 
   /*  COLORS: SURFACE  */
   --ix-surface: #ffffff;

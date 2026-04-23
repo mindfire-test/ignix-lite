@@ -1,0 +1,32 @@
+span[aria-busy="true"] {
+  display: inline-block;
+  background-color: var(--ix-surface-raised);
+  border-radius: var(--ix-radius);
+}
+ 
+
+span[aria-busy="true"][data-shape="text"] {
+  height: var(--ix-space-sm);
+  width: 100%;
+  max-width: 300px; 
+  margin-bottom: var(--ix-space-lg);
+  display: block;
+}
+ 
+span[aria-busy="true"][data-shape="rect"] {
+  height: var(--ix-size-xl);
+  width: 100%;
+  max-width: 300px;
+}
+ 
+
+span[aria-busy="true"][data-shape="circle"] {
+  width: var(--ix-space-lg);
+  height: var(--ix-space-lg);
+  border-radius: 50%;
+}
+ 
+span[aria-busy="true"][data-lines] {
+  display: block;
+}
+ 

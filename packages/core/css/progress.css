@@ -1,0 +1,7 @@
+progress {
+    width: 50%;
+    height: var(--ix-space-sm);
+    border-radius: var(--ix-radius);
+    overflow: hidden;
+    border: 1px solid var(--ix-border);
+}
