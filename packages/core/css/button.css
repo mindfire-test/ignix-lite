@@ -64,7 +64,7 @@ button:active:not(:disabled):not([aria-busy='true']) {
 }
 
 button:focus-visible {
-  outline: var(--ix-focus);
+  outline: 2px solid var(--ix-focus);
   outline-offset: 2px;
 }
 
