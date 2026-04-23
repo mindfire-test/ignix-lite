@@ -1,0 +1,13 @@
+form {
+  max-width: 400px;
+}
+
+form > * + * {
+  margin-top: var(--ix-space-md);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--ix-space-sm);
+}
