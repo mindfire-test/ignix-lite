@@ -47,7 +47,9 @@ label select[data-intent]:focus-visible {
   outline-offset: 2px;
 }
 label select[data-intent]:disabled {
-  opacity: 0.5;
+  background: var(--ix-surface-raised);
+  border-color: var(--ix-border);
+  color: var(--ix-text-muted);  
   cursor: not-allowed;
 }
 label select[data-intent][aria-invalid='true'] {

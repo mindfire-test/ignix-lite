@@ -85,6 +85,29 @@
   </form>
  
 </section>
+
+<section>
+  <h2>Validation State</h2>
+
+<pre><code>
+&lt;form&gt;
+  &lt;label data-state="error"&gt;
+    Email
+    &lt;input type="email" value="invalid-email" aria-invalid="true"&gt;
+    &lt;small&gt;Please enter a valid email address.&lt;/small&gt;
+  &lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+
+  <form>
+    <label data-state="error">
+      Email
+      <input type="email" value="invalid-email" aria-invalid="true">
+      <small>Please enter a valid email address.</small>
+    </label>
+  </form>
+
+</section>
  
 </main>
  

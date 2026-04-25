@@ -14,6 +14,6 @@ label input[type='checkbox']:disabled {
   cursor: not-allowed;
 }
 label input[type='checkbox']:focus-visible {
-  outline: 2px solid var(--ix-focus);
+  outline: var(--ix-focus);
   outline-offset: 2px;
 }
