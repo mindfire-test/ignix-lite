@@ -41,12 +41,14 @@ label input:not([data-intent]) {
 }
 
 label input:focus-visible {
-  outline: 2px solid var(--ix-focus);
+  outline: var(--ix-focus);
   outline-offset: 2px;
 }
 
 label input:disabled {
-  opacity: 0.5;
+  background: var(--ix-surface-raised);
+  border-color: var(--ix-border);
+  color: var(--ix-text-muted); 
   cursor: not-allowed;
 }
 

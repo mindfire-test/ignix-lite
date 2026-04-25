@@ -1,9 +1,8 @@
 meter {
-    width: 50%;
-    height: var(--ix-space-sm);
-    background-color: var(--ix-surface-raised);
-    border-radius: var(--ix-radius);
-    overflow: hidden;
-    border: none;
-      
+  width: 50%;
+  height: var(--ix-space-sm);
+  background-color: var(--ix-surface-raised);
+  border-radius: var(--ix-radius);
+  overflow: hidden;
+  border: none;
 }

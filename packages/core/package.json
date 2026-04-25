@@ -16,7 +16,12 @@
     "format": "prettier --write .",
     "build:css": "pnpm exec cleancss -o ignix-lite.min.css ignix-lite.css"
   },
-  "keywords": ["css", "ui", "design-system", "ignix-lite"],
+  "keywords": [
+    "css",
+    "ui",
+    "design-system",
+    "ignix-lite"
+  ],
   "author": "Mindfire Digital",
   "license": "MIT",
   "packageManager": "pnpm@10.33.0",

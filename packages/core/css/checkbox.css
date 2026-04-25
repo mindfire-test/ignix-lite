@@ -10,10 +10,12 @@ label:has(input[type='checkbox']) {
   font-size: var(--ix-size-md);
 }
 label input[type='checkbox']:disabled {
-  opacity: 0.5;
+  background: var(--ix-surface-raised);
+  border-color: var(--ix-border);
+  color: var(--ix-text-muted); 
   cursor: not-allowed;
 }
 label input[type='checkbox']:focus-visible {
-  outline: 2px solid var(--ix-focus);
+  outline: var(--ix-focus);
   outline-offset: 2px;
 }

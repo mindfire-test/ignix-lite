@@ -9,28 +9,24 @@ span[data-size] {
   font-weight: 600;
 }
 
-
-[data-size="sm"] {
+[data-size='sm'] {
   width: 2rem;
   height: 2rem;
   font-size: var(--ix-size-sm);
 }
 
-[data-size="md"] {
+[data-size='md'] {
   width: 3rem;
   height: 3rem;
   font-size: var(--ix-size-md);
 }
 
-[data-size="lg"] {
+[data-size='lg'] {
   width: 4rem;
   height: 4rem;
   font-size: var(--ix-size-lg);
 }
 
-
 img[data-size] {
   object-fit: cover;
 }
-
-
