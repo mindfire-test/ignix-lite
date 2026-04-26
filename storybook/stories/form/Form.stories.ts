@@ -40,3 +40,15 @@ export const Loading = {
   `,
 }
  
+export const ValidationError = {
+  render: () => `
+    <form onsubmit="event.preventDefault()">
+
+      <label data-state="error">
+        Email
+        <input type="email" value="invalid-email" aria-invalid="true"> 
+        <small>Please enter a valid email address.</small>
+      </label>
+    </form>
+  `
+}

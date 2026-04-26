@@ -11,7 +11,6 @@ label select[data-intent] {
     box-shadow 0.15s ease;
 }
 label select[multiple] {
-  
   border-radius: var(--ix-radius);
   background-color: var(--ix-surface-raised);
   font-size: var(--ix-size-md);
@@ -23,7 +22,6 @@ label select[multiple] option {
 
 label select[multiple] option:checked {
   background: var(--ix-primary);
-  
 }
 
 label select[data-intent='primary'] {
@@ -47,7 +45,9 @@ label select[data-intent]:focus-visible {
   outline-offset: 2px;
 }
 label select[data-intent]:disabled {
-  opacity: 0.5;
+  background: var(--ix-surface-raised);
+  border-color: var(--ix-border);
+  color: var(--ix-text-muted); 
   cursor: not-allowed;
 }
 label select[data-intent][aria-invalid='true'] {

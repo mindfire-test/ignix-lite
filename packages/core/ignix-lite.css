@@ -41,6 +41,8 @@ html {
   --ix-primary-hover: #1d4ed8;
 
   --ix-danger: #dc2626;
+  --ix-danger-text: #dc2626;
+
   --ix-warning: #fbbf24;
   --ix-success: #15803d;
   --ix-neutral: #6b7280;
@@ -51,7 +53,7 @@ html {
   --ix-success-bg: #dcfce7;
   --ix-info-bg: #f3f4f6;
 
-  --ix-on-primary: #ffffff;
+  
   --ix-on-danger: #ffffff;
   --ix-on-warning: #000000;
   --ix-on-success: #ffffff;
@@ -116,6 +118,8 @@ html {
     --ix-primary-hover: #2563eb;
 
     --ix-danger: #b91c1c;
+    --ix-danger-text: #ef4444;
+
     --ix-warning: #fbbf24;
     --ix-success: #15803d;
     --ix-neutral: #9ca3af;

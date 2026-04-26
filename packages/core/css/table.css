@@ -14,8 +14,7 @@ thead {
   background: var(--ix-surface-raised);
 }
 
-
-th[aria-sort="ascending"],
-th[aria-sort="descending"] {
+th[aria-sort='ascending'],
+th[aria-sort='descending'] {
   color: var(--ix-primary);
 }

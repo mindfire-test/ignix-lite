@@ -1,19 +1,29 @@
 {
-  "name": "@ignix-lite/core",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "ignix-lite",
+  "version": "1.0.6",
+  "description": "Browser-native, agent-optimized UI CSS library",
+  "main": "ignix-lite.min.css",
+  "style": "ignix-lite.min.css",
+  "files": [
+    "ignix-lite.css",
+    "ignix-lite.min.css",
+    "README.md"
+  ],
   "scripts": {
-    "dev": "echo \"CSS dev not required\"",
     "build": "pnpm run build:css",
     "test": "vitest run --passWithNoTests",
     "lint": "eslint . --no-error-on-unmatched-pattern",
     "format": "prettier --write .",
     "build:css": "pnpm exec cleancss -o ignix-lite.min.css ignix-lite.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "css",
+    "ui",
+    "design-system",
+    "ignix-lite"
+  ],
+  "author": "Mindfire Digital",
+  "license": "MIT",
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
     "vitest": "^4.1.4",

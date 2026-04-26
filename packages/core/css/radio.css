@@ -13,11 +13,13 @@ label:has(input[type='radio']) {
 }
 
 label input[type='radio']:disabled {
-  opacity: 0.5;
+  background: var(--ix-surface-raised);
+  border-color: var(--ix-border);
+  color: var(--ix-text-muted); 
   cursor: not-allowed;
 }
 
 label input[type='radio']:focus-visible {
-  outline: 2px solid var(--ix-focus);
+  outline: var(--ix-focus);
   outline-offset: 2px;
 }
