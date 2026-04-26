@@ -21,12 +21,18 @@ span[aria-busy="true"][data-shape="rect"] {
  
 
 span[aria-busy="true"][data-shape="circle"] {
-  width: var(--ix-space-lg);
-  height: var(--ix-space-lg);
+  width: var(--ix-size-lg);
+  height: var(--ix-size-lg);
   border-radius: 50%;
 }
  
 span[aria-busy="true"][data-lines] {
   display: block;
+  height: var(--ix-space-sm);
+  width: 100%;
+  margin-bottom: var(--ix-space-sm);
 }
- 
+
+span[aria-busy="true"][data-lines]:last-child {
+  width: 60%; 
+}
