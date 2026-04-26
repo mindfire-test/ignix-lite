@@ -41,7 +41,7 @@ label input:not([data-intent]) {
 }
 
 label input:focus-visible {
-  outline: var(--ix-focus);
+  outline: 2px solid var(--ix-focus);
   outline-offset: 2px;
 }
 

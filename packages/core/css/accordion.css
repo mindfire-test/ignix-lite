@@ -12,16 +12,12 @@ summary {
   font-weight: 500;
 }
 
-
 details p {
   margin-top: var(--ix-space-sm);
   color: var(--ix-text-muted);
 }
 
 summary:focus-visible {
-  outline: var(--ix-focus);
+  outline: 2px solid var(--ix-focus);
   outline-offset: 2px;
 }
-
-
-

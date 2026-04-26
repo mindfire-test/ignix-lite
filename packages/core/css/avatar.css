@@ -1,0 +1,36 @@
+img[data-size],
+span[data-size] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--ix-surface-raised);
+  color: var(--ix-text);
+  font-weight: 600;
+}
+
+
+[data-size="sm"] {
+  width: 2rem;
+  height: 2rem;
+  font-size: var(--ix-size-sm);
+}
+
+[data-size="md"] {
+  width: 3rem;
+  height: 3rem;
+  font-size: var(--ix-size-md);
+}
+
+[data-size="lg"] {
+  width: 4rem;
+  height: 4rem;
+  font-size: var(--ix-size-lg);
+}
+
+
+img[data-size] {
+  object-fit: cover;
+}
+
+
