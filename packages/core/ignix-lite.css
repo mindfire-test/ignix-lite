@@ -39,7 +39,8 @@ html {
   /*  COLORS: INTENT */
   --ix-primary: #2563eb;
   --ix-primary-hover: #1d4ed8;
-
+  --ix-primary-contrast: #bfdbfe;
+  
   --ix-danger: #dc2626;
   --ix-danger-text: #dc2626;
 
