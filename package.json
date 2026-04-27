@@ -7,11 +7,15 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
     "lint": "turbo run lint",
     "test": "vitest",
     "format": "turbo run format",
     "prepare": "husky",
     "typecheck": "tsc -b",
+    "size": "node scripts/size.js",
     "storybook": "storybook dev --config-dir storybook/.storybook",
     "build-storybook": "storybook build --config-dir storybook/.storybook"
   },
@@ -20,6 +24,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.33.0",
   "devDependencies": {
+    "@changesets/cli": "^2.31.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@eslint/js": "^10.0.1",
     "@storybook/addon-a11y": "^8.6.17",
