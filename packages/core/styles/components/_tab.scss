@@ -4,77 +4,74 @@ ix-tabs {
   background: var(--ix-surface-raised);
   border: 1px solid var(--ix-border);
   border-radius: var(--ix-radius-lg);
-}
 
-ix-tabs > [slot='tab'] {
-  all: unset;
-  cursor: pointer;
+  > [slot='tab'] {
+    all: unset;
+    cursor: pointer;
 
-  display: inline-block;
-  margin-right: 4px;
+    display: inline-block;
+    margin-right: 4px;
+    padding: 6px 12px;
 
-  padding: 6px 12px;
+    font-size: var(--ix-size-sm);
+    font-family: var(--ix-font);
+    color: var(--ix-text);
 
-  font-size: var(--ix-size-sm);
-  font-family: var(--ix-font);
+    border-radius: var(--ix-radius);
 
-  color: var(--ix-text);
+    transition: background 0.25s ease, color 0.25s ease;
 
-  border-radius: var(--ix-radius);
+    &:hover {
+      background: var(--ix-surface);
+    }
 
-  transition:
-    background 0.25s ease,
-    color 0.25s ease;
-}
+    &:focus-visible {
+      outline: 2px solid var(--ix-primary);
+      outline-offset: 2px;
+    }
 
-ix-tabs > [slot='tab']:hover {
-  background: var(--ix-surface);
-}
+    &[aria-selected='true'] {
+      background: var(--ix-primary);
+      color: var(--ix-on-primary);
+    }
+  }
 
-ix-tabs > [slot='tab']:focus-visible {
-  outline: 2px solid var(--ix-primary);
-  outline-offset: 2px;
-}
 
-ix-tabs > [slot='tab'][aria-selected='true'] {
-  background: var(--ix-primary);
-  color: var(--ix-on-primary);
-}
+  &[data-variant='underline'] {
+    background: none;
+    border: none;
+    padding: 0;
 
-ix-tabs[variant='underline'] {
-  background: none;
-  border: none;
-  padding: 0;
-}
+    > [slot='tab'] {
+      background: none;
+      border-radius: 0;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 6px;
 
-ix-tabs[variant='underline'] > [slot='tab'] {
-  background: none;
-  border-radius: 0;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 6px;
-}
+      &:hover {
+        background: none;
+        border-bottom-color: var(--ix-border);
+      }
 
-ix-tabs[variant='underline'] > [slot='tab']:hover {
-  background: none;
-  border-bottom-color: var(--ix-border);
-}
+      &[aria-selected='true'] {
+        background: none;
+        color: var(--ix-primary);
+        border-bottom-color: var(--ix-primary);
+      }
+    }
+  }
 
-ix-tabs[variant='underline'] > [slot='tab'][aria-selected='true'] {
-  background: none;
-  color: var(--ix-primary);
-  border-bottom-color: var(--ix-primary);
-}
 
-ix-tabs[variant='pill'] > [slot='tab'] {
-  border-radius: 999px;
-}
+  &[data-variant='pill'] {
+    > [slot='tab'] {
+      border-radius: 999px;
+    }
+  }
 
-ix-tabs[variant='pill'] > [slot='tab'][aria-selected='true'] {
-  background: var(--ix-primary);
-  color: var(--ix-on-primary);
-}
-
-ix-tabs[variant='gradient'] > [slot='tab'][aria-selected='true'] {
-  background: var(--ix-gradient);
-  color: var(--ix-on-primary);
+  &[data-variant='gradient'] {
+    > [slot='tab'][aria-selected='true'] {
+      background: var(--ix-gradient);
+      color: var(--ix-on-primary);
+    }
+  }
 }
