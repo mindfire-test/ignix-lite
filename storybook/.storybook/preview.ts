@@ -1,3 +1,4 @@
+import '../../packages/core/ignix-lite.min.js'
 import '../../packages/core/ignix-lite.min.css'
 
 export const parameters = {

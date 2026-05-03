@@ -1,23 +1,28 @@
-import { existsSync, copyFileSync } from 'fs'
+import { existsSync, copyFileSync, readdirSync } from 'fs'
 import { join } from 'path'
 
 const distPath = join(process.cwd(), 'dist')
 
-const cssSrc = join(distPath, 'ignix-lite.min.css')
-const jsSrc = join(distPath, 'ignix-lite.min.js')
+const files = readdirSync(distPath)
 
-const cssDest = join(process.cwd(), 'ignix-lite.min.css')
-const jsDest = join(process.cwd(), 'ignix-lite.min.js')
+let cssFile = files.find(f => f.endsWith('.css'))
+let jsFile = files.find(f => f.endsWith('.js'))
 
-if (existsSync(cssSrc)) {
-  copyFileSync(cssSrc, cssDest)
+if (cssFile) {
+  copyFileSync(
+    join(distPath, cssFile),
+    join(process.cwd(), 'ignix-lite.min.css')
+  )
   console.log('CSS moved')
 } else {
   console.error('CSS not found')
 }
 
-if (existsSync(jsSrc)) {
-  copyFileSync(jsSrc, jsDest)
+if (jsFile) {
+  copyFileSync(
+    join(distPath, jsFile),
+    join(process.cwd(), 'ignix-lite.min.js')
+  )
   console.log('JS moved')
 } else {
   console.error('JS not found')
