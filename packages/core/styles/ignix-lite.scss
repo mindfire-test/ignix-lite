@@ -1,6 +1,7 @@
 @use './components/tab';
 @use './components/tooltip';
 @use './components/dropdown';
+@use './components/toast';
 
 html {
   box-sizing: border-box;
@@ -27,6 +28,7 @@ html {
   --ix-neutral: #6b7280;
   --ix-ghost: transparent;
 
+  --ix-primary-bg: #c7d2fe;
   --ix-danger-bg: #fee2e2;
   --ix-warning-bg: #fef3c7;
   --ix-success-bg: #dcfce7;
@@ -51,9 +53,20 @@ html {
   --ix-focus: 2px solid var(--ix-primary);
 
   /* TYPOGRAPHY */
-  --ix-font: system-ui, -apple-system, sans-serif;
-  --ix-font-mono: ui-monospace, monospace;
+ --ix-font:
+    "Segoe UI Variable",
+    "Segoe UI",
+    "Roboto",
+    "Noto Sans",
+    system-ui,
+    sans-serif;
 
+  --ix-font-mono:
+    "JetBrains Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+    
   --ix-size-xs: 0.75rem;
   --ix-size-sm: 0.875rem;
   --ix-size-md: 1rem;
@@ -75,12 +88,7 @@ html {
   --ix-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
   /* Gradient */
-  --ix-gradient: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
+  --ix-gradient: linear-gradient(0deg,rgba(7, 240, 240, 1) 22%, rgba(54, 80, 99, 1) 100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -93,7 +101,7 @@ html {
 
     --ix-border: #334155;
 
-    --ix-primary: #818cf8;
+    --ix-primary: hsl(234, 89%, 74%);
     --ix-primary-hover: #6366f1;
 
     --ix-danger: #ef4444;
@@ -103,6 +111,7 @@ html {
     --ix-success: #22c55e;
     --ix-neutral: #9ca3af;
 
+    --ix-primary-bg: #1e1b4b;
     --ix-danger-bg: #3f1d1d;
     --ix-warning-bg: #3f2e05;
     --ix-success-bg: #052e16;
@@ -120,6 +129,7 @@ body {
   font-family: var(--ix-font);
   font-size: var(--ix-size-md);
   line-height: var(--ix-line-height);
+
 }
 
 @import '../css/button.css';
