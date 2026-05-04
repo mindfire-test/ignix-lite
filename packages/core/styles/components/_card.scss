@@ -11,19 +11,19 @@ article {
 
   max-width: 320px;
   margin: 0;
-}
 
-article > [slot="avatar"],
-article > [slot="title"] {
-  display: inline-block;
-  vertical-align: middle;
+  > [slot="avatar"],
+  > [slot="title"] {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 [slot='avatar'] {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-   margin-right: var(--ix-space-sm);
+  margin-right: var(--ix-space-sm);
 }
 
 [slot='title'] {

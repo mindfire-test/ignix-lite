@@ -32,16 +32,15 @@
 &lt;/button&gt;
 </code></pre>
 
-<ix-toast id="toast"></ix-toast>
+  <ix-toast id="toast"></ix-toast>
 
-<button onclick="toast.show({
-  title: 'Saved',
-  message: 'Your data has been updated.',
-  intent: 'neutral'
-})">
-  Show Default
-</button>
-
+  <button onclick="toast.show({
+    title: 'Saved',
+    message: 'Your data has been updated.',
+    intent: 'neutral'
+  })">
+    Show Default
+  </button>
 </section>
 
 
@@ -80,37 +79,37 @@ toast.show({
 })
 </code></pre>
 
-<button onclick="toast.show({
-  title: 'Default',
-  message: 'This is a neutral notification.',
-  intent: 'neutral'
-})">Neutral</button>
+  <button onclick="toast.show({
+    title: 'Default',
+    message: 'This is a neutral notification.',
+    intent: 'neutral'
+  })">Neutral</button>
 
-<button onclick="toast.show({
-  title: 'Success',
-  message: 'Your profile has been updated.',
-  intent: 'success'
-})">Success</button>
+  <button onclick="toast.show({
+    title: 'Success',
+    message: 'Your profile has been updated.',
+    intent: 'success'
+  })">Success</button>
 
-<button onclick="toast.show({
-  title: 'Error',
-  message: 'Unable to complete the action.',
-  intent: 'danger'
-})">Danger</button>
+  <button onclick="toast.show({
+    title: 'Error',
+    message: 'Unable to complete the action.',
+    intent: 'danger'
+  })">Danger</button>
 
-<button onclick="toast.show({
-  title: 'Warning',
-  message: 'Check your inputs carefully.',
-  intent: 'warning'
-})">Warning</button>
+  <button onclick="toast.show({
+    title: 'Warning',
+    message: 'Check your inputs carefully.',
+    intent: 'warning'
+  })">Warning</button>
 
-<button onclick="toast.show({
-  title: 'Info',
-  message: 'System update available.',
-  intent: 'primary'
-})">Primary</button>
-
+  <button onclick="toast.show({
+    title: 'Info',
+    message: 'System update available.',
+    intent: 'primary'
+  })">Primary</button>
 </section>
+
 
 <section>
   <h2>Motion Variants</h2>
@@ -138,28 +137,51 @@ toast.show({
 })
 </code></pre>
 
-<button onclick="toast.show({
-  title: 'Saved',
-  message: 'Your data has been updated.',
-  variant: 'fade',
-  intent: 'neutral'
-})">Fade</button>
+  <button onclick="toast.show({
+    title: 'Saved',
+    message: 'Your data has been updated.',
+    variant: 'fade',
+    intent: 'neutral'
+  })">Fade</button>
 
-<button onclick="toast.show({
-  title: 'Saved',
-  message: 'Your data has been updated.',
-  variant: 'slide',
-  intent: 'success'
-})">Slide</button>
+  <button onclick="toast.show({
+    title: 'Saved',
+    message: 'Your data has been updated.',
+    variant: 'slide',
+    intent: 'success'
+  })">Slide</button>
 
-<button onclick="toast.show({
-  title: 'Error',
-  message: 'Something failed.',
-  variant: 'pop',
-  intent: 'danger'
-})">Pop</button>
-
+  <button onclick="toast.show({
+    title: 'Error',
+    message: 'Something failed.',
+    variant: 'pop',
+    intent: 'danger'
+  })">Pop</button>
 </section>
+
+
+<section>
+  <h2>Action Toast</h2>
+
+<pre><code>
+toast.show({
+  title: 'Confirm',
+  message: 'Do you want to continue?',
+  intent: 'primary',
+  variant: 'action'
+})
+</code></pre>
+
+  <button onclick="toast.show({
+    title: 'Confirm',
+    message: 'Do you want to continue?',
+    intent: 'primary',
+    variant: 'action'
+  })">
+    Show Action Toast
+  </button>
+</section>
+
 
 <section>
   <h2>Positions</h2>
@@ -195,42 +217,34 @@ topRight.show({
 })
 </code></pre>
 
-<ix-toast id="topLeft" data-position="top-left"></ix-toast>
-<ix-toast id="bottomRight" data-position="bottom-right"></ix-toast>
-<ix-toast id="bottomLeft" data-position="bottom-left"></ix-toast>
-<ix-toast id="topRight" data-position="top-right"></ix-toast>
+  <ix-toast id="topLeft" data-position="top-left"></ix-toast>
+  <ix-toast id="bottomRight" data-position="bottom-right"></ix-toast>
+  <ix-toast id="bottomLeft" data-position="bottom-left"></ix-toast>
+  <ix-toast id="topRight" data-position="top-right"></ix-toast>
 
-<button onclick="topLeft.show({
-  title: 'Top Left',
-  message: 'Danger toast at top left.',
-  intent: 'danger'
-})">
-  Top Left
-</button>
+  <button onclick="topLeft.show({
+    title: 'Top Left',
+    message: 'Danger toast at top left.',
+    intent: 'danger'
+  })">Top Left</button>
 
-<button onclick="bottomRight.show({
-  title: 'Bottom Right',
-  message: 'Success toast at bottom right.',
-  intent: 'success'
-})">
-  Bottom Right
-</button>
+  <button onclick="bottomRight.show({
+    title: 'Bottom Right',
+    message: 'Success toast at bottom right.',
+    intent: 'success'
+  })">Bottom Right</button>
 
-<button onclick="bottomLeft.show({
-  title: 'Bottom Left',
-  message: 'Warning toast at bottom left.',
-  intent: 'warning'
-})">
-  Bottom Left
-</button>
+  <button onclick="bottomLeft.show({
+    title: 'Bottom Left',
+    message: 'Warning toast at bottom left.',
+    intent: 'warning'
+  })">Bottom Left</button>
 
-<button onclick="topRight.show({
-  title: 'Top Right',
-  message: 'Primary toast at top right.',
-  intent: 'primary'
-})">
-  Top Right
-</button>
+  <button onclick="topRight.show({
+    title: 'Top Right',
+    message: 'Primary toast at top right.',
+    intent: 'primary'
+  })">Top Right</button>
 
 </section>
 

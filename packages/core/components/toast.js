@@ -1,6 +1,6 @@
 class IxToast extends HTMLElement {
   connectedCallback() {
-    this.setAttribute('aria-live', 'polite') 
+    this.setAttribute('aria-live', 'polite')
   }
 
   show({
@@ -8,7 +8,8 @@ class IxToast extends HTMLElement {
     message = '',
     intent = 'neutral',
     duration = 3000,
-    variant = 'fade'
+    variant = 'fade',
+    actionText = 'OK'
   }) {
     const toast = document.createElement('aside')
 
@@ -27,26 +28,29 @@ class IxToast extends HTMLElement {
     toast.setAttribute('aria-labelledby', titleId)
     toast.setAttribute('aria-describedby', msgId)
 
+   
     toast.innerHTML = `
       <strong id="${titleId}">${title || intent}</strong>
       <span id="${msgId}">${message}</span>
-      <button aria-label="Dismiss notification">OK</button>
     `
+
+    if (variant === 'action') {
+      const btn = document.createElement('button')
+      btn.textContent = actionText
+
+      btn.onclick = () => toast.remove()
+
+      toast.appendChild(btn)
+    }
 
     this.appendChild(toast)
 
-    const btn = toast.querySelector('button')
-
-    btn.onclick = () => toast.remove()
-
-   
     toast.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') toast.remove()
     })
 
     requestAnimationFrame(() => {
       toast.setAttribute('data-open', 'true')
-      btn.focus()   
     })
 
     setTimeout(() => {

@@ -43,12 +43,12 @@ ix-toast {
 
   > aside {
     display: flex;
-    flex-direction: column;      
+    flex-direction: column;
     align-items: flex-start;
 
     gap: 6px;
     min-width: 260px;
-    padding: 16px;              
+    padding: 16px;
 
     border-radius: var(--ix-radius);
     border: 1px solid var(--ix-border);
@@ -70,45 +70,46 @@ ix-toast {
       transform: translateY(0);
     }
 
-
     strong {
       display: block;
       font-weight: 600;
       margin-bottom: 2px;
     }
 
-   
     span {
       display: block;
       color: var(--ix-text-muted);
       font-size: 0.85rem;
       line-height: 1.5;
-      margin-bottom: 6px;        
+      margin-bottom: 6px;
     }
 
-    
     button {
-      align-self: flex-end;     
-      margin-top: 4px;
-
-      all: unset;
-      cursor: pointer;
-
-      padding: 6px 14px;
-      border-radius: var(--ix-radius);
-
-      font-size: 0.75rem;
-      border: 1px solid var(--ix-border);
-
-      transition: all 0.15s ease;
-
-      &:hover {
-        background: var(--ix-surface);
-      }
+      display: none;
     }
   }
 
+  > aside[data-variant="action"] button {
+    display: inline-flex;
 
+    align-self: flex-end;
+    margin-top: 4px;
+
+    all: unset;
+    cursor: pointer;
+
+    padding: 6px 14px;
+    border-radius: var(--ix-radius);
+
+    font-size: 0.75rem;
+    border: 1px solid var(--ix-border);
+
+    transition: all 0.15s ease;
+
+    &:hover {
+      background: var(--ix-surface);
+    }
+  }
 
   > aside[data-intent="primary"] {
     border-left: 3px solid var(--ix-primary);
@@ -134,8 +135,7 @@ ix-toast {
     border-left: 3px solid var(--ix-border);
   }
 
-
-
+  /* variants */
   > aside[data-variant="slide"] {
     transform: translateX(16px);
   }

@@ -9,15 +9,15 @@
 
 <body>
 
-  <header>
-    <h1>Radio</h1>
-    <p><a href="./index.html"> - Back to Docs</a></p>
-  </header>
+<header>
+  <h1>Radio</h1>
+  <p><a href="./index.html"> - Back to Docs</a></p>
+</header>
 
-  <main>
+<main>
 
-    <section>
-      <h2>Usage</h2>
+  <section>
+    <h2>Usage</h2>
 
 <pre><code>
 &lt;label&gt;
@@ -26,16 +26,17 @@
 &lt;/label&gt;
 </code></pre>
 
-      <label>
-        <input type="radio" name="lang">
-        JavaScript
-      </label>
-    </section>
+    <label>
+      <input type="radio" name="lang">
+      JavaScript
+    </label>
+  </section>
 
-    <section>
-      <h2>States</h2>
 
-      <h3>Checked</h3>
+  <section>
+    <h2>States</h2>
+
+    <h3>Checked</h3>
 
 <pre><code>
 &lt;label&gt;
@@ -44,12 +45,12 @@
 &lt;/label&gt;
 </code></pre>
 
-      <label>
-        <input type="radio" name="lang" checked>
-        Checked
-      </label>
+    <label>
+      <input type="radio" name="lang" checked>
+      Checked
+    </label>
 
-      <h3>Disabled</h3>
+    <h3>Disabled</h3>
 
 <pre><code>
 &lt;label&gt;
@@ -58,83 +59,167 @@
 &lt;/label&gt;
 </code></pre>
 
-      <label>
-        <input type="radio" name="lang" disabled>
-        Disabled
-      </label>
+    <label>
+      <input type="radio" name="lang" disabled>
+      Disabled
+    </label>
+  </section>
 
-    </section>
 
-    <section>
-      <h2>Required</h2>
+  <section>
+    <h2>Required</h2>
 
 <pre><code>
 &lt;label&gt;
-  &lt;input type="radio" name="lang" required&gt;
+  &lt;input type="radio" name="req" required&gt;
   JavaScript
 &lt;/label&gt;
 
 &lt;label&gt;
-  &lt;input type="radio" name="lang"&gt;
+  &lt;input type="radio" name="req"&gt;
   Python
 &lt;/label&gt;
 </code></pre>
 
-      <label>
-        <input type="radio" name="lang" required>
-        JavaScript
-      </label>
+    <label>
+      <input type="radio" name="req" required>
+      JavaScript
+    </label>
 
-      <label>
-        <input type="radio" name="lang">
-        Python
-      </label>
+    <label>
+      <input type="radio" name="req">
+      Python
+    </label>
 
-      <p>At least one option must be selected.</p>
-    </section>
+    <p>At least one option must be selected.</p>
+  </section>
 
-    <section>
-      <h2>Radio Group</h2>
+
+  <section>
+    <h2>Radio Group</h2>
 
 <pre><code>
 &lt;label&gt;
-  &lt;input type="radio" name="lang"&gt;
+  &lt;input type="radio" name="group"&gt;
   JavaScript
 &lt;/label&gt;
 
 &lt;label&gt;
-  &lt;input type="radio" name="lang"&gt;
+  &lt;input type="radio" name="group"&gt;
   Python
 &lt;/label&gt;
 
 &lt;label&gt;
-  &lt;input type="radio" name="lang"&gt;
+  &lt;input type="radio" name="group"&gt;
   Java
 &lt;/label&gt;
 </code></pre>
 
-      <label>
-        <input type="radio" name="lang">
-        JavaScript
-      </label>
+    <label>
+      <input type="radio" name="group">
+      JavaScript
+    </label>
 
-      <label>
-        <input type="radio" name="lang">
-        Python
-      </label>
+    <label>
+      <input type="radio" name="group">
+      Python
+    </label>
 
-      <label>
-        <input type="radio" name="lang">
-        Java
-      </label>
+    <label>
+      <input type="radio" name="group">
+      Java
+    </label>
+  </section>
 
-    </section>
+  <section>
+    <h2>Intent Variants</h2>
 
-  </main>
+<pre><code>
+&lt;label data-intent="success"&gt;
+  &lt;input type="radio" name="intent"&gt;
+  Success
+&lt;/label&gt;
 
-  <footer>
-    <p>ignix-lite - Radio Docs</p>
-  </footer>
+&lt;label data-intent="danger"&gt;
+  &lt;input type="radio" name="intent"&gt;
+  Danger
+&lt;/label&gt;
+
+&lt;label data-intent="warning"&gt;
+  &lt;input type="radio" name="intent"&gt;
+  Warning
+&lt;/label&gt;
+
+&lt;label data-intent="neutral"&gt;
+  &lt;input type="radio" name="intent"&gt;
+  Neutral
+&lt;/label&gt;
+</code></pre>
+
+    <label data-intent="success">
+      <input type="radio" name="intent" checked>
+      Success
+    </label>
+
+    <label data-intent="danger">
+      <input type="radio" name="intent">
+      Danger
+    </label>
+
+    <label data-intent="warning">
+      <input type="radio" name="intent">
+      Warning
+    </label>
+
+    <label data-intent="neutral">
+      <input type="radio" name="intent">
+      Neutral
+    </label>
+  </section>
+
+
+ 
+  <section>
+    <h2>Sizes</h2>
+
+<pre><code>
+&lt;label data-size="sm"&gt;
+  &lt;input type="radio" name="size"&gt;
+  Small
+&lt;/label&gt;
+
+&lt;label data-size="md"&gt;
+  &lt;input type="radio" name="size"&gt;
+  Medium
+&lt;/label&gt;
+
+&lt;label data-size="lg"&gt;
+  &lt;input type="radio" name="size"&gt;
+  Large
+&lt;/label&gt;
+</code></pre>
+
+    <label data-size="sm">
+      <input type="radio" name="size">
+      Small
+    </label>
+
+    <label data-size="md">
+      <input type="radio" name="size" checked>
+      Medium
+    </label>
+
+    <label data-size="lg">
+      <input type="radio" name="size">
+      Large
+    </label>
+  </section>
+
+</main>
+
+<footer>
+  <p>ignix-lite - Radio Docs</p>
+</footer>
 
 </body>
 </html>
