@@ -3,6 +3,26 @@
 @use './components/dropdown';
 @use './components/toast';
 @use './components/combobox';
+@use './components/accordion';
+@use './components/alert';
+@use './components/avatar';
+@use './components/badge';
+@use './components/button';
+@use './components/card';
+@use './components/checkbox';
+@use './components/codeblock';
+@use './components/dialog';
+@use './components/divider';
+@use './components/form';
+@use './components/input';
+@use './components/progress';
+@use './components/meter';
+@use './components/navigation';
+@use './components/textarea';
+@use './components/select';
+@use './components/radio';
+@use './components/skeleton';
+@use './components/table';
 
 html {
   box-sizing: border-box;
@@ -89,7 +109,7 @@ html {
   --ix-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
   /* Gradient */
-  --ix-gradient: linear-gradient(0deg,rgba(7, 240, 240, 1) 22%, rgba(54, 80, 99, 1) 100%);
+  --ix-gradient: linear-gradient(to right, #b20a2c,#fffbd5)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -133,22 +153,4 @@ body {
 
 }
 
-@import '../css/button.css';
-@import '../css/input.css';
-@import '../css/textarea.css';
-@import '../css/alert.css';
-@import '../css/select.css';
-@import '../css/checkbox.css';
-@import '../css/radio.css';
-@import '../css/badge.css';
-@import '../css/dialog.css';
-@import '../css/accordion.css';
-@import '../css/card.css';
-@import '../css/codeblock.css';
-@import '../css/divider.css';
-@import '../css/progress.css';
-@import '../css/meter.css';
-@import '../css/skeleton.css';
-@import '../css/form.css';
-@import '../css/avatar.css';
-@import '../css/navigation.css';
+

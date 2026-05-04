@@ -1,168 +1,174 @@
 ix-combobox {
   position: relative;
-  display: inline-block;
-  width: 280px;
+  display: inline-block;   
+  width: 260px;           
+}
 
-  [part="control"] {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
 
-    align-items: flex-start; 
-    gap: 4px;
+ix-combobox [part="control"] {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
 
-    padding: 6px 60px 6px 6px;
-    border: 1px solid var(--ix-border);
-    border-radius: var(--ix-radius);
-    background: var(--ix-surface-raised);
+  padding: 6px 28px 6px 6px;  
 
-    &:focus-within {
-      border-color: var(--ix-primary);
-      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
-    }
-  }
+  border: 1px solid var(--ix-border);
+  border-radius: var(--ix-radius);
+  background: var(--ix-surface-raised);
+}
 
-  input {
-    flex: 1;
-    min-width: 60px;
+ix-combobox [part="control"]:focus-within {
+  border-color: var(--ix-primary);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.25);
+}
 
-    padding: 4px;
-    border: none;
-    outline: none;
 
-    background: transparent;
-    color: var(--ix-text);
+ix-combobox input {
+  flex: 1;
+  min-width: 0;  
 
-    font-size: var(--ix-size-sm);
-    font-family: var(--ix-font);
+  padding: 4px;
+  border: none;
+  outline: none;
 
-    &:focus,
-    &:focus-visible {
-      outline: none;
-      box-shadow: none;
-    }
+  background: transparent;
+  color: var(--ix-text);
 
-    -webkit-appearance: none;
-    appearance: none;
-  }
+  font-size: var(--ix-size-sm);
+  font-family: var(--ix-font);
 
-  button[data-clear] {
-    all: unset;
-    position: absolute;
+  -webkit-appearance: none;
+  appearance: none;
+}
 
-    right: 8px;
-    top: 50%;
-    transform: translateY(-50%);
+ix-combobox input:focus,
+ix-combobox input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
 
-    font-size: 12px;
-    cursor: pointer;
-    color: var(--ix-text-muted);
 
-    display: none;
+ix-combobox button[data-clear] {
+  all: unset;
+  position: absolute;
 
-    &:hover {
-      color: var(--ix-text);
-      text-decoration: underline;
-    }
-  }
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
 
-  [data-chips] {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 4px;
-  }
+  font-size: 12px;
+  cursor: pointer;
 
-  [data-chips] span {
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
+  color: var(--ix-text-muted);
+  text-decoration: none;   
 
-    padding: 2px 6px;
-    border-radius: 999px;
+ix-combobox button[data-clear]:hover {
+  color: var(--ix-text);
+  text-decoration: none;
+}
 
-    background: var(--ix-surface);
-    font-size: 12px;
-  }
+}
+ix-combobox [data-chips] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
 
-  [data-chips] button {
-    all: unset;
-    cursor: pointer;
-    font-size: 12px;
-    opacity: 0.7;
+ix-combobox [data-chips] span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 
-    &:hover {
-      opacity: 1;
-    }
-  }
+  padding: 2px 6px;
+  border-radius: 999px;
 
-  ul {
-    position: absolute;
-    top: calc(100% + 6px);
-    left: 0;
-    width: 100%;
+  background: var(--ix-surface);
+  font-size: 12px;
+}
 
-    padding: 4px;
-    margin: 0;
-    list-style: none;
+ix-combobox [data-chips] button {
+  all: unset;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.7;
+  text-decoration: none;
+}
 
-    background: var(--ix-surface-raised);
-    border: 1px solid var(--ix-border);
-    border-radius: var(--ix-radius-lg);
+ix-combobox [data-chips] button:hover {
+  opacity: 1;
+}
 
-    box-shadow: var(--ix-shadow);
-    z-index: 1000;
-  }
 
-  li {
-    padding: 8px 10px;
-    border-radius: var(--ix-radius);
-    cursor: pointer;
+ix-combobox ul {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  width: 100%;
 
-    transition: 0.15s ease;
+  padding: 4px;
+  margin: 0;
+  list-style: none;
 
-    &:hover,
-    &[data-active="true"] {
-      background: var(--ix-surface);
-    }
-  }
+  background: var(--ix-surface-raised);
+  border: 1px solid var(--ix-border);
+  border-radius: var(--ix-radius-lg);
 
-  li[data-selected="true"] {
-    font-weight: 500;
-  }
+  box-shadow: var(--ix-shadow);
+  z-index: 1000;
+}
 
-  &[data-intent="primary"] li:hover,
-  &[data-intent="primary"] li[data-selected="true"],
-  &[data-intent="primary"] li[data-active="true"] {
-    background: var(--ix-primary);
-    color: var(--ix-on-primary);
-  }
+ix-combobox li {
+  padding: 8px 10px;
+  border-radius: var(--ix-radius);
+  cursor: pointer;
 
-  &[data-intent="success"] li:hover,
-  &[data-intent="success"] li[data-selected="true"],
-  &[data-intent="success"] li[data-active="true"] {
-    background: var(--ix-success);
-    color: var(--ix-on-success);
-  }
+  transition: 0.15s ease;
+}
 
-  &[data-intent="warning"] li:hover,
-  &[data-intent="warning"] li[data-selected="true"],
-  &[data-intent="warning"] li[data-active="true"] {
-    background: var(--ix-warning);
-    color: var(--ix-on-warning);
-  }
+ix-combobox li:hover,
+ix-combobox li[data-active="true"] {
+  background: var(--ix-surface);
+}
 
-  &[data-intent="danger"] li:hover,
-  &[data-intent="danger"] li[data-selected="true"],
-  &[data-intent="danger"] li[data-active="true"] {
-    background: var(--ix-danger);
-    color: var(--ix-on-danger);
-  }
+ix-combobox li[data-selected="true"] {
+  font-weight: 500;
+}
 
-  &[data-intent="gradient"] li:hover,
-  &[data-intent="gradient"] li[data-selected="true"],
-  &[data-intent="gradient"] li[data-active="true"] {
-    background: var(--ix-gradient);
-    color: var(--ix-on-primary);
-  }
+
+ix-combobox[data-intent="primary"] li:hover,
+ix-combobox[data-intent="primary"] li[data-selected="true"],
+ix-combobox[data-intent="primary"] li[data-active="true"] {
+  background: var(--ix-primary);
+  color: var(--ix-on-primary);
+}
+
+ix-combobox[data-intent="success"] li:hover,
+ix-combobox[data-intent="success"] li[data-selected="true"],
+ix-combobox[data-intent="success"] li[data-active="true"] {
+  background: var(--ix-success);
+  color: var(--ix-on-success);
+}
+
+ix-combobox[data-intent="warning"] li:hover,
+ix-combobox[data-intent="warning"] li[data-selected="true"],
+ix-combobox[data-intent="warning"] li[data-active="true"] {
+  background: var(--ix-warning);
+  color: var(--ix-on-warning);
+}
+
+ix-combobox[data-intent="danger"] li:hover,
+ix-combobox[data-intent="danger"] li[data-selected="true"],
+ix-combobox[data-intent="danger"] li[data-active="true"] {
+  background: var(--ix-danger);
+  color: var(--ix-on-danger);
+}
+
+ix-combobox[data-intent="gradient"] li:hover,
+ix-combobox[data-intent="gradient"] li[data-selected="true"],
+ix-combobox[data-intent="gradient"] li[data-active="true"] {
+  background: var(--ix-gradient);
+  color: var(--ix-on-primary);
 }
