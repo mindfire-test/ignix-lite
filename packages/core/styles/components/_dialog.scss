@@ -24,9 +24,10 @@ dialog {
     }
   }
 
-  &::backdrop {
-    background: var(--ix-surface-raised);
-  }
+ &::backdrop {
+    background: rgb(0 0 0 / 0.45);
+    backdrop-filter: blur(2px);
+ }
 
   &[data-intent='danger'] {
     border-color: var(--ix-danger);
