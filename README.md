@@ -1,8 +1,3 @@
-<img
-  src="./assets/Ignix-LiteHomePage.png"
-  alt="Ignix Lite Homepage"
-  width="100%"
-/>
 # Ignix Lite
 
 A lightweight, semantic, and browser-native CSS UI library focused on simplicity, accessibility, and performance.
