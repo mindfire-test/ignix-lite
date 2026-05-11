@@ -2,13 +2,17 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 const config: Config = {
   title: 'Ignix Lite',
   tagline: 'Minimal CSS-first UI system',
   favicon: 'img/logo.svg',
 
-  url: 'http://localhost:3000',
-  baseUrl: '/',
+  
+  url: 'https://mindfiredigital.github.io',
+  baseUrl: isProd ? '/ignix-lite/' : '/',
+
 
   organizationName: 'mindfiredigital',
   projectName: 'ignix-lite',

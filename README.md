@@ -41,7 +41,7 @@ npm install @mindfiredigital/ignix-lite
 ### Using npm
 
 ```html
-<link rel="stylesheet" href="node_modules/ignix-lite/ignix-lite.min.css" />
+<link rel="stylesheet" href="node_modules/@mindfiredigital/ignix-lite/ignix-lite.min.css" />
 ```
 
 

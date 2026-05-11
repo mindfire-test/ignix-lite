@@ -177,7 +177,7 @@
 .text-muted            { color: var(--muted-foreground); }
 .text-amber-800        { color: rgb(230, 112, 9) !important; font-weight: 600 !important; }
 
-@keyframes gradientShift {
+@keyframes gradient-shift {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
@@ -312,7 +312,7 @@ h1 { margin: 0.5rem; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
-  animation: gradientShift 6s linear infinite;
+  animation: gradient-shift 6s linear infinite;
   -webkit-text-stroke: 0.3px rgba(255, 255, 255, 0.03);
   font-weight: 800;
   text-shadow: 0 0 rgba(255, 77, 77, 0.2);

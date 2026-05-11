@@ -38,12 +38,12 @@ ix-combobox button[data-clear] {
   cursor: pointer;
 
   color: var(--ix-text-muted);
-  text-decoration: none;   
-
-ix-combobox button[data-clear]:hover {
-  color: var(--ix-text);
   text-decoration: none;
-}
+
+  &:hover {
+    color: var(--ix-text);
+    text-decoration: none;
+  }
 
 }
 ix-combobox [data-chips] {

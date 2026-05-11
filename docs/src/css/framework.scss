@@ -1,4 +1,4 @@
-@use './components/badge.scss';
+@use './components/badge';
 @use './components/tab';
 @use './components/tooltip';
 @use './components/dropdown';
@@ -21,7 +21,7 @@
 @use './components/radio';
 @use './components/skeleton';
 @use './components/table';
-@use './components//card';
+@use './components/card';
 
 
 
@@ -88,7 +88,7 @@ html {
   --ix-font-mono:
     'JetBrains Mono',
     'SFMono-Regular',
-    Consolas,
+    consolas,
     monospace;
 
   --ix-size-xs: 0.75rem;

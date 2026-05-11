@@ -18,10 +18,10 @@
 
   background-size: 200% 100%;
 
-  animation: gradientShift 6s linear infinite;
+  animation: gradient-shift 6s linear infinite;
 }
 
-@keyframes gradientShift {
+@keyframes gradient-shift {
   0% {
     background-position: 0% 50%;
   }

@@ -45,7 +45,7 @@ dialog {
   }
 
   &:focus-visible {
-    outline: var(--ix-primary);
+    outline: 2px solid var(--ix-primary);
     outline-offset: 2px;
   }
 }
