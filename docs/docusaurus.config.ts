@@ -2,16 +2,14 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
 
-const isProd = process.env.NODE_ENV === 'production'
-
 const config: Config = {
   title: 'Ignix Lite',
   tagline: 'Minimal CSS-first UI system',
-  favicon: 'img/logo.svg',
+  favicon: 'img/logo.png',
 
   
   url: 'https://mindfiredigital.github.io',
-  baseUrl: isProd ? '/ignix-lite/' : '/',
+  baseUrl: '/ignix-lite/', 
 
 
   organizationName: 'mindfiredigital',
@@ -52,8 +50,9 @@ const config: Config = {
     image: 'img/logo.png',
 
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       disableSwitch: false,
+      respectPrefersColorScheme: false,
     },
 
     navbar: {
@@ -67,11 +66,12 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Documentation',
         },
         {
           href: 'https://github.com/mindfiredigital/ignix-lite',
-          label: 'GitHub',
+          className: 'header--github-link',
+          "aria-label": 'GitHub repository',
           position: 'right',
         },
       ],
@@ -84,7 +84,7 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
   scripts: [
   {
-    src: '/ignix-lite.min.js',
+    src: '/ignix-lite/ignix-lite.min.js',
     defer: true,
   },
 ],
