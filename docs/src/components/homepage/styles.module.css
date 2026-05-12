@@ -186,14 +186,6 @@
   background-clip: text;
 }
 
-
-@keyframes blink {
-  0%, 100% { border-color: var(--primary); }
-  50%       { border-color: transparent; }
-}
-
-
-
 .heroSubtitle {
   font-size: 1.08rem;
   line-height: 1.9;

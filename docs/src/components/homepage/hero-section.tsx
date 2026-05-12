@@ -83,9 +83,9 @@ function HeroSection() {
     <section className={styles.hero}>
       <div className={styles.heroInner}>
 
-        <mark className={styles.badge}>
+        <span className={styles.badge}>
           Ignix Lite
-        </mark>
+        </span>
 
        <h1 className={styles.heroTitle}>
           Ultra-light
@@ -139,7 +139,7 @@ function HeroSection() {
         </div>
 
         <div className={styles.installBox}>
-          <CopyButton text="pnpm add @mindfiredigital/ignix-lite" />
+          <CopyButton text="npm install @mindfiredigital/ignix-lite" />
           <code>npm install @mindfiredigital/ignix-lite</code>
         </div>
 
