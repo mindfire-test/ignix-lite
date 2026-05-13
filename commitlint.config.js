@@ -18,6 +18,7 @@ export default {
         'docs',
         'release',
         'deps',
+        'test'
       ],
     ],
     'scope-empty': [2, 'never'],
