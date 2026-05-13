@@ -7,6 +7,16 @@ dialog {
   box-shadow: var(--ix-shadow);
   max-width: 28rem;
 
+  position: fixed; 
+  margin: auto; 
+  width: revert; 
+  height: revert;
+  transition: opacity 0.2s ease;
+
+dialog[open] {
+  display: block;
+}
+
   h2 {
     margin: 0 0 var(--ix-space-sm);
   }
